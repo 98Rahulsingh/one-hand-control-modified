@@ -1,0 +1,63 @@
+name: Analyze and prepare One Hand Control APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_path:
+        description: "Repository path to the original APK"
+        required: true
+        default: "input/One Hand Control.apk"
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Validate input APK
+        shell: bash
+        run: |
+          APK_PATH="${{ inputs.apk_path }}"
+          test -f "$APK_PATH" || { echo "APK not found: $APK_PATH"; exit 1; }
+          file "$APK_PATH"
+          sha256sum "$APK_PATH" | tee original-apk.sha256
+
+      - name: Install APK analysis tools
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unzip wget
+          mkdir -p "$HOME/tools"
+          wget -q https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O "$HOME/tools/apktool"
+          wget -q https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.1.jar -O "$HOME/tools/apktool.jar"
+          chmod +x "$HOME/tools/apktool"
+          echo "$HOME/tools" >> "$GITHUB_PATH"
+          wget -q https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip -O /tmp/jadx.zip
+          unzip -q /tmp/jadx.zip -d "$HOME/tools/jadx"
+          echo "$HOME/tools/jadx/bin" >> "$GITHUB_PATH"
+
+      - name: Decode resources and smali
+        shell: bash
+        run: |
+          mkdir -p analysis
+          apktool d -f "${{ inputs.apk_path }}" -o analysis/apktool
+          jadx --show-bad-code -d analysis/jadx "${{ inputs.apk_path }}" || true
+          cp original-apk.sha256 analysis/
+
+      - name: Upload decoded project for source review
+        uses: actions/upload-artifact@v4
+        with:
+          name: one-hand-control-decompiled-source
+          path: analysis/
+          if-no-files-found: error
+          retention-days: 7
