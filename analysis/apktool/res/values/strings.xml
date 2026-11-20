@@ -1954,4 +1954,18 @@ Powered by many thumbs."</string>
     <string name="whats_new_try_failed">Could not open it right now. Try again in a moment.</string>
     <string name="whats_new_try_it">Try it</string>
     <string name="whats_new_try_needs_service">Turn on One Hand Control in Accessibility settings to try it.</string>
+    <string name="feature_controls_title">Feature Controls</string>
+    <string name="feature_controls_summary">Turn individual overlay features on or off for this device. Off features will not launch from edge gestures.</string>
+    <string name="feature_controls_category">Overlay features</string>
+    <string name="feature_enabled_app_launcher">App Launcher</string>
+    <string name="feature_enabled_quick_access">Quick Access / Pie Control</string>
+    <string name="feature_enabled_quick_tools">Quick Tools</string>
+    <string name="feature_enabled_side_panel">Side Panel</string>
+    <string name="feature_enabled_touch_pad">Touch Pad</string>
+    <string name="feature_enabled_remote_cursor">Remote Cursor</string>
+    <string name="feature_enabled_media_controller">Media Controller</string>
+    <string name="feature_enabled_drawing_pad">Drawing Pad</string>
+    <string name="feature_enabled_preset_picker">Preset Picker</string>
+    <string name="feature_enabled_notification_carousel">Notification Carousel</string>
+    <string name="feature_enabled_notch_timer">Notch Timer</string>
 </resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/feature_controls_title">
+
+    <PreferenceCategory android:title="@string/feature_controls_category">
+        <SwitchPreference
+            android:key="feature_enabled_show_app_launcher"
+            android:title="@string/feature_enabled_app_launcher"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_show_quick_access"
+            android:title="@string/feature_enabled_quick_access"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_show_quick_tools"
+            android:title="@string/feature_enabled_quick_tools"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_show_side_panel"
+            android:title="@string/feature_enabled_side_panel"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_show_touch_pad"
+            android:title="@string/feature_enabled_touch_pad"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_show_remote_cursor"
+            android:title="@string/feature_enabled_remote_cursor"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_media_controller"
+            android:title="@string/feature_enabled_media_controller"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_drawing_pad"
+            android:title="@string/feature_enabled_drawing_pad"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_show_preset_picker"
+            android:title="@string/feature_enabled_preset_picker"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_show_notification_carousel"
+            android:title="@string/feature_enabled_notification_carousel"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:key="feature_enabled_notch_timer"
+            android:title="@string/feature_enabled_notch_timer"
+            android:summary="@string/feature_controls_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

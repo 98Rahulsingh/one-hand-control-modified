@@ -12221,6 +12221,20 @@
 
     move-object/from16 v1, p1
 
+    iget-object v7, v1, LA2/T0;->a:Ljava/lang/String;
+
+    invoke-static {v2, v7}, Lcom/onehandcontrol/app/ui/FeatureSwitches;->isEnabled(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-nez v7, :feature_switches_enabled
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :feature_switches_enabled
+
     move-object/from16 v8, p2
 
     move-object/from16 v9, p3
