@@ -1,70 +1,35 @@
-name: Analyze and prepare One Hand Control APK
+name: Build APK
 
 on:
   workflow_dispatch:
-    inputs:
-      apk_path:
-        description: "Repository path to the original APK"
-        required: true
-        default: "One Hand Control .apk"
-
-permissions:
-  contents: write
+  push:
+    branches:
+      - main
 
 jobs:
-  inspect:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Java
+      - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: "17"
+          java-version: '21'
 
-      - name: Validate input APK
-        shell: bash
-        run: |
-          APK_PATH="${{ inputs.apk_path }}"
-          test -f "$APK_PATH" || { echo "APK not found: $APK_PATH"; exit 1; }
-          file "$APK_PATH"
-          sha256sum "$APK_PATH" | tee original-apk.sha256
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
 
-      - name: Install APK analysis tools
-        shell: bash
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y unzip wget
-          mkdir -p "$HOME/tools"
-          wget -q https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O "$HOME/tools/apktool"
-          wget -q https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.1.jar -O "$HOME/tools/apktool.jar"
-          chmod +x "$HOME/tools/apktool"
-          echo "$HOME/tools" >> "$GITHUB_PATH"
-          wget -q https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip -O /tmp/jadx.zip
-          unzip -q /tmp/jadx.zip -d "$HOME/tools/jadx"
-          echo "$HOME/tools/jadx/bin" >> "$GITHUB_PATH"
+      - name: Build APK
+        run: gradle assembleDebug --no-daemon --console=plain
 
-      - name: Decode resources and smali
-        shell: bash
-        run: |
-          mkdir -p analysis
-          apktool d -f "${{ inputs.apk_path }}" -o analysis/apktool
-          jadx --show-bad-code -d analysis/jadx "${{ inputs.apk_path }}" || true
-          cp original-apk.sha256 analysis/
-      - name: Commit decoded project to repository
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add analysis/
-          git diff --staged --quiet || git commit -m "Add decoded APK source for editing"
-          git push
-      - name: Upload decoded project for source review
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: one-hand-control-decompiled-source
-          path: analysis/
-          if-no-files-found: error
-          retention-days: 7
+          name: OneHandControl-V5-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
