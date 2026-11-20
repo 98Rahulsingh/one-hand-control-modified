@@ -21,3 +21,5 @@ This is a **private** workspace for preparing changes to the user-provided One H
 4. Download the artifact named `one-hand-control-decompiled-source` and provide it here. I can then locate the exact launcher, quick-tools, action registry, and group persistence code before writing targeted patches.
 
 The workflow only decompiles and packages source for review. It does not yet modify or rebuild the app: exact patch points must be identified from the decoded source first.
+
+<!-- Connection test comment -->
