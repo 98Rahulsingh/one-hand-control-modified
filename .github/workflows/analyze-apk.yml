@@ -56,11 +56,11 @@ jobs:
       - name: Commit decoded project to repository
         shell: bash
         run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add analysis/
-        git diff --staged --quiet || git commit -m "Add decoded APK source for editing"
-        git push
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis/
+          git diff --staged --quiet || git commit -m "Add decoded APK source for editing"
+          git push
       - name: Upload decoded project for source review
         uses: actions/upload-artifact@v4
         with:
