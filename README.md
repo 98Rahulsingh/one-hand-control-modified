@@ -23,3 +23,12 @@ This is a **private** workspace for preparing changes to the user-provided One H
 The workflow only decompiles and packages source for review. It does not yet modify or rebuild the app: exact patch points must be identified from the decoded source first.
 
 <!-- Connection test comment -->
+
+## Implemented: local pricing preference votes
+
+The decoded app now opens a small pricing-preference dialog from `SettingsActivity` with exactly two switches:
+
+- `Paid feature -> Free`
+- `Free feature -> Paid`
+
+Each tap increments only the selected choice's counter. Counts are stored locally in the existing app `SharedPreferences` store under the stable `pricing_preference_votes` name, with `paid_to_free_count` and `free_to_paid_count` keys. No network, backend, feature gating, or per-feature popularity tracking is involved; the values are intended to survive normal APK updates that preserve app data.

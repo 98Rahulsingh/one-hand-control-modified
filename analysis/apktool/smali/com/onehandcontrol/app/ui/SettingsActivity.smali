@@ -622,6 +622,8 @@
     .line 138
     invoke-virtual {p1, v2}, LE0/p0;->setContent(Lb3/e;)V
 
+    invoke-static {p0}, Lcom/onehandcontrol/app/ui/PricingVoteDialog;->show(Landroid/app/Activity;)V
+
     .line 139
     .line 140
     .line 141
@@ -733,6 +735,8 @@
     .line 195
     .line 196
     invoke-virtual {p0, p1, v0}, Lh/j;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    invoke-static {p0}, Lcom/onehandcontrol/app/ui/PricingVoteDialog;->show(Landroid/app/Activity;)V
 
     .line 197
     .line 198
