@@ -1,0 +1,6 @@
+package I2;
+
+/* renamed from: I2.h1, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public interface InterfaceC0373h1 {
+}

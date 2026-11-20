@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.onehandcontrol.app" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.HOME"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+        </intent>
+        <intent>
+            <action android:name="org.adw.launcher.THEMES"/>
+        </intent>
+        <intent>
+            <action android:name="com.novalauncher.THEME"/>
+        </intent>
+        <intent>
+            <action android:name="app.lawnchair.icons.THEMED_ICON"/>
+        </intent>
+        <intent>
+            <action android:name="ch.deletescape.lawnchair.ICONPACK"/>
+        </intent>
+        <intent>
+            <action android:name="com.dlto.atom.launcher.THEME"/>
+        </intent>
+        <intent>
+            <action android:name="ginlemon.smartlauncher.THEMES"/>
+        </intent>
+        <intent>
+            <action android:name="com.gau.go.launcherex.theme"/>
+        </intent>
+        <intent>
+            <action android:name="com.motorola.launcher.ACTION_ICON_PACK"/>
+        </intent>
+        <intent>
+            <action android:name="com.sonymobile.home.ICON_PACK"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="com.anddoes.launcher.THEME"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+    </queries>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <permission android:name="com.onehandcontrol.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.onehandcontrol.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:localeConfig="@xml/_generated_res_locale_config" android:name="com.pairip.application.Application" android:resizeableActivity="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/Theme.OneHandControl">
+        <service android:enabled="false" android:exported="false" android:name="androidx.appcompat.app.AppLocalesMetadataHolderService">
+            <meta-data android:name="autoStoreLocales" android:value="true"/>
+        </service>
+        <activity android:exported="true" android:name="com.onehandcontrol.app.ui.SettingsActivity" android:theme="@style/Theme.OneHandControl.Starting"/>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_ruby" android:label="@string/app_name" android:name="com.onehandcontrol.app.ui.LauncherRuby" android:roundIcon="@mipmap/ic_launcher_ruby_round" android:targetActivity="com.onehandcontrol.app.ui.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_diamond" android:label="@string/app_name" android:name="com.onehandcontrol.app.ui.LauncherDiamond" android:roundIcon="@mipmap/ic_launcher_diamond_round" android:targetActivity="com.onehandcontrol.app.ui.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_gold" android:label="@string/app_name" android:name="com.onehandcontrol.app.ui.LauncherGold" android:roundIcon="@mipmap/ic_launcher_gold_round" android:targetActivity="com.onehandcontrol.app.ui.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_silver" android:label="@string/app_name" android:name="com.onehandcontrol.app.ui.LauncherSilver" android:roundIcon="@mipmap/ic_launcher_silver_round" android:targetActivity="com.onehandcontrol.app.ui.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_dark" android:label="@string/app_name" android:name="com.onehandcontrol.app.ui.LauncherDark" android:roundIcon="@mipmap/ic_launcher_dark_round" android:targetActivity="com.onehandcontrol.app.ui.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.onehandcontrol.app.ui.LauncherLight" android:roundIcon="@mipmap/ic_launcher_round" android:targetActivity="com.onehandcontrol.app.ui.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onehandcontrol.app.ui.QuickSettingsTilePreferencesActivity" android:noHistory="true" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:theme="@style/Theme.OneHandControl.Translucent">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.onehandcontrol.app.action.PhoneCallPermissionActivity" android:theme="@style/Theme.OneHandControl.Translucent"/>
+        <service android:exported="false" android:name="com.onehandcontrol.app.service.EdgeGestureService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ic_quick_settings_one_hand_control_loop" android:label="@string/quick_settings_tile_label" android:name="com.onehandcontrol.app.service.OneHandControlTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+            <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE" android:value="true"/>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ic_quick_settings_extra_dim" android:label="@string/quick_settings_extra_dim_tile_label" android:name="com.onehandcontrol.app.service.ExtraDimTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+            <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE" android:value="true"/>
+        </service>
+        <receiver android:exported="false" android:name="com.onehandcontrol.app.service.ExtraDimScheduleReceiver"/>
+        <receiver android:enabled="false" android:exported="false" android:name="com.onehandcontrol.app.service.ExtraDimScheduleBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.TIMEZONE_OFFSET_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:label="@string/app_name" android:name="com.onehandcontrol.app.service.MediaSessionNotificationListener" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.onehandcontrol.app.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="8.3.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.onehandcontrol.app.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:exported="false" android:name="com.pairip.licensecheck.LicenseActivity"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+</manifest>

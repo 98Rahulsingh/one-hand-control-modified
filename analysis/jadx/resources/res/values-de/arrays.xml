@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="whats_new_more_items">
+        <item>Lautstärkeregler: Neue Option „Aktivem Audio folgen“ für Anruf- und Klingeltonlautstärke.</item>
+        <item>Aktionsauswahl: Klappe Bereiche ein, deine Auswahl wird gespeichert.</item>
+        <item>Die Einstellungsseite einiger Aktionen wurde für ein besseres Erlebnis neu gestaltet.</item>
+        <item>Fehlerbehebungen.</item>
+    </array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="whats_new_more_items">
+        <item>Curseur de volume : nouvelle option Suivre l\'audio actif pour le volume des appels et de la sonnerie.</item>
+        <item>Sélecteur d\'actions : réduisez des sections, votre choix est mémorisé.</item>
+        <item>Page des paramètres de certaines actions repensée pour une meilleure expérience.</item>
+        <item>Corrections de bugs.</item>
+    </array>
+</resources>

@@ -1,0 +1,139 @@
+.class public final synthetic LK2/b6;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lb3/c;
+
+
+# instance fields
+.field public final synthetic e:I
+
+.field public final synthetic f:LS/a0;
+
+
+# direct methods
+.method public synthetic constructor <init>(LS/a0;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, LK2/b6;->e:I
+
+    iput-object p1, p0, LK2/b6;->f:LS/a0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final m(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    sget-object v0, LN2/n;->a:LN2/n;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, LK2/b6;->f:LS/a0;
+
+    .line 4
+    .line 5
+    iget v2, p0, LK2/b6;->e:I
+
+    .line 6
+    .line 7
+    packed-switch v2, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    check-cast p1, Ljava/lang/Float;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p1
+
+    .line 16
+    sget-boolean v2, LK2/Qe;->t:Z
+
+    .line 17
+    .line 18
+    invoke-virtual {v1, p1}, LS/a0;->h(F)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-object v0
+
+    .line 22
+    :pswitch_0
+    check-cast p1, LB0/p;
+
+    .line 23
+    .line 24
+    const-string v2, "it"
+
+    .line 25
+    .line 26
+    invoke-static {p1, v2}, Lc3/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-interface {p1}, LB0/p;->P()J
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-wide v2
+
+    .line 33
+    const/16 p1, 0x20
+
+    .line 34
+    .line 35
+    shr-long/2addr v2, p1
+
+    .line 36
+    long-to-int p1, v2
+
+    .line 37
+    int-to-float p1, p1
+
+    .line 38
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    .line 39
+    .line 40
+    cmpg-float v3, p1, v2
+
+    .line 41
+    .line 42
+    if-gez v3, :cond_0
+
+    .line 43
+    .line 44
+    move p1, v2
+
+    .line 45
+    :cond_0
+    invoke-virtual {v1, p1}, LS/a0;->h(F)V
+
+    .line 46
+    .line 47
+    .line 48
+    return-object v0
+
+    .line 49
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

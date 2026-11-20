@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.OneHandControl.Starting" parent="@style/Theme.OneHandControl">
+        <item name="android:statusBarColor">@color/edge_splash_background</item>
+        <item name="android:navigationBarColor">@color/edge_splash_background</item>
+        <item name="android:windowSplashScreenBackground">@color/edge_splash_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_transparent_icon</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@android:color/transparent</item>
+    </style>
+</resources>

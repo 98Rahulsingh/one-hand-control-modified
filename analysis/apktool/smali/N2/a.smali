@@ -1,0 +1,22 @@
+.class public interface abstract annotation LN2/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation LN2/a;
+        level = .enum LN2/b;->e:LN2/b;
+        replaceWith = .subannotation LN2/h;
+            expression = ""
+            imports = {}
+        .end subannotation
+    .end subannotation
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation

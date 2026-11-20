@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="whats_new_more_items">
+        <item>Control deslizante de volumen: nueva opción Seguir el audio activo para el volumen de llamadas y del tono.</item>
+        <item>Selector de acciones: contrae secciones y tu elección se recuerda.</item>
+        <item>Rediseñamos la página de ajustes de algunas acciones para una mejor experiencia.</item>
+        <item>Corrección de errores.</item>
+    </array>
+</resources>

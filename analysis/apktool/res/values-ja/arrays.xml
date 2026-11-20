@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="whats_new_more_items">
+        <item>音量スライダー: 通話と着信音の音量に使える新しい「再生中の音声に合わせる」オプション。</item>
+        <item>アクション選択: セクションを折りたたむことができ、状態は記憶されます。</item>
+        <item>一部のアクションの設定ページを、より使いやすく再設計しました。</item>
+        <item>不具合の修正。</item>
+    </string-array>
+</resources>

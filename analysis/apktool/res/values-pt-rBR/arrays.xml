@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="whats_new_more_items">
+        <item>Controle de volume: nova opção Seguir o áudio ativo para o volume de chamadas e do toque.</item>
+        <item>Seletor de ações: recolha seções e sua escolha fica salva.</item>
+        <item>Redesenhamos a página de configurações de algumas ações para uma experiência melhor.</item>
+        <item>Correções de bugs.</item>
+    </string-array>
+</resources>

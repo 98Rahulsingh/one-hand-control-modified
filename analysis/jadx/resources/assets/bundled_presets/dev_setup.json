@@ -1,0 +1,690 @@
+{
+    "schemaVersion": 1,
+    "createdAtMs": 1780433023088,
+    "settings": {
+        "app_launcher_pinned_apps": {
+            "type": "string",
+            "value": "[]"
+        },
+        "app_launcher_pinned_items": {
+            "type": "string",
+            "value": "[{\"type\":\"action\",\"id\":\"action:flashlight\",\"label\":\"Toggle Flashlight\",\"actionId\":\"flashlight\"},{\"type\":\"action\",\"id\":\"action:auto_rotate\",\"label\":\"Toggle Auto-Rotate\",\"subtitle\":\"Requires System Settings permission.\",\"actionId\":\"auto_rotate\"}]"
+        },
+        "app_launcher_show_only_pinned": {
+            "type": "boolean",
+            "value": false
+        },
+        "app_launcher_show_pinned": {
+            "type": "boolean",
+            "value": true
+        },
+        "custom_pull_angle_slot_count": {
+            "type": "int",
+            "value": 3
+        },
+        "custom_pull_angles_enabled": {
+            "type": "boolean",
+            "value": false
+        },
+        "custom_pull_max_angle": {
+            "type": "int",
+            "value": 69
+        },
+        "edge_action_sync_direction": {
+            "type": "string",
+            "value": "right_to_left"
+        },
+        "edge_actions_synced": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_bottom_z1_enabled": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_bottom_z1_indicator": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_bottom_z1_landscape_only": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_bottom_z1_length": {
+            "type": "int",
+            "value": 65
+        },
+        "edge_bottom_z1_orientation_mode": {
+            "type": "string",
+            "value": "both"
+        },
+        "edge_bottom_z1_position": {
+            "type": "int",
+            "value": 50
+        },
+        "edge_bottom_z1_thickness": {
+            "type": "int",
+            "value": 20
+        },
+        "edge_bottom_z1_vibrate": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_left_z1_enabled": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_left_z1_indicator": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_left_z1_landscape_only": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_left_z1_length": {
+            "type": "int",
+            "value": 25
+        },
+        "edge_left_z1_orientation_mode": {
+            "type": "string",
+            "value": "both"
+        },
+        "edge_left_z1_position": {
+            "type": "int",
+            "value": 50
+        },
+        "edge_left_z1_thickness": {
+            "type": "int",
+            "value": 20
+        },
+        "edge_left_z1_vibrate": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_left_z2_enabled": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_left_z2_enabled_backup": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_left_z2_indicator": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_left_z2_landscape_only": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_left_z2_length": {
+            "type": "int",
+            "value": 22
+        },
+        "edge_left_z2_orientation_mode": {
+            "type": "string",
+            "value": "both"
+        },
+        "edge_left_z2_position": {
+            "type": "int",
+            "value": 100
+        },
+        "edge_left_z2_thickness": {
+            "type": "int",
+            "value": 18
+        },
+        "edge_left_z2_vibrate": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_right_z1_enabled": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_right_z1_indicator": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_right_z1_landscape_only": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_right_z1_length": {
+            "type": "int",
+            "value": 25
+        },
+        "edge_right_z1_orientation_mode": {
+            "type": "string",
+            "value": "both"
+        },
+        "edge_right_z1_position": {
+            "type": "int",
+            "value": 50
+        },
+        "edge_right_z1_thickness": {
+            "type": "int",
+            "value": 20
+        },
+        "edge_right_z1_vibrate": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_right_z2_enabled": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_right_z2_enabled_backup": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_right_z2_indicator": {
+            "type": "boolean",
+            "value": true
+        },
+        "edge_right_z2_landscape_only": {
+            "type": "boolean",
+            "value": false
+        },
+        "edge_right_z2_length": {
+            "type": "int",
+            "value": 22
+        },
+        "edge_right_z2_orientation_mode": {
+            "type": "string",
+            "value": "both"
+        },
+        "edge_right_z2_position": {
+            "type": "int",
+            "value": 100
+        },
+        "edge_right_z2_thickness": {
+            "type": "int",
+            "value": 18
+        },
+        "edge_right_z2_vibrate": {
+            "type": "boolean",
+            "value": true
+        },
+        "gesture_bottom_z1_long_press": {
+            "type": "string",
+            "value": "notifications"
+        },
+        "gesture_bottom_z1_pull_inward": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_bottom_z1_pull_inward_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_bottom_z1_slide_left": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_bottom_z1_slide_left_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_bottom_z1_slide_right": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_bottom_z1_slide_right_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_bottom_z1_triple_tap": {
+            "type": "string",
+            "value": "flashlight"
+        },
+        "gesture_left_z1_custom_pull_1": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_1_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_2": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_2_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_3": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_3_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_4": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_4_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_5": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_5_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_6": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_6_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_7": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_custom_pull_7_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_double_tap": {
+            "type": "string",
+            "value": "show_quick_access"
+        },
+        "gesture_left_z1_long_press": {
+            "type": "string",
+            "value": "volume_slider"
+        },
+        "gesture_left_z1_pull_diagonal_down": {
+            "type": "string",
+            "value": "lock_screen"
+        },
+        "gesture_left_z1_pull_diagonal_down_and_hold": {
+            "type": "string",
+            "value": "previous_app"
+        },
+        "gesture_left_z1_pull_diagonal_up": {
+            "type": "string",
+            "value": "media_next"
+        },
+        "gesture_left_z1_pull_diagonal_up_and_hold": {
+            "type": "string",
+            "value": "media_controller"
+        },
+        "gesture_left_z1_pull_inward": {
+            "type": "string",
+            "value": "back"
+        },
+        "gesture_left_z1_pull_inward_and_hold": {
+            "type": "string",
+            "value": "recents"
+        },
+        "gesture_left_z1_slide_left": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_slide_left_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_slide_right": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_slide_right_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_swipe_down": {
+            "type": "string",
+            "value": "quick_settings"
+        },
+        "gesture_left_z1_swipe_down_and_hold": {
+            "type": "string",
+            "value": "notifications"
+        },
+        "gesture_left_z1_swipe_up": {
+            "type": "string",
+            "value": "home"
+        },
+        "gesture_left_z1_swipe_up_and_hold": {
+            "type": "string",
+            "value": "show_touch_pad"
+        },
+        "gesture_left_z1_tap": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z1_triple_tap": {
+            "type": "string",
+            "value": "select_all_text"
+        },
+        "gesture_left_z2_custom_pull_1": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_1_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_2": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_2_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_3": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_3_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_4": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_4_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_5": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_5_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_6": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_6_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_7": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_custom_pull_7_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_double_tap": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_long_press": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_pull_diagonal_down": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_pull_diagonal_down_and_hold": {
+            "type": "string",
+            "value": "previous_app"
+        },
+        "gesture_left_z2_pull_diagonal_up": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_pull_diagonal_up_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_pull_inward": {
+            "type": "string",
+            "value": "back"
+        },
+        "gesture_left_z2_pull_inward_and_hold": {
+            "type": "string",
+            "value": "recents"
+        },
+        "gesture_left_z2_slide_left": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_slide_left_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_slide_right": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_slide_right_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_swipe_down": {
+            "type": "string",
+            "value": "quick_settings"
+        },
+        "gesture_left_z2_swipe_down_and_hold": {
+            "type": "string",
+            "value": "notifications"
+        },
+        "gesture_left_z2_swipe_up": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_swipe_up_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_tap": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_left_z2_triple_tap": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z1_custom_pull_1": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z1_custom_pull_1_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z1_custom_pull_2": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z1_custom_pull_2_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z1_custom_pull_3": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z1_custom_pull_3_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z1_double_tap": {
+            "type": "string",
+            "value": "show_quick_access"
+        },
+        "gesture_right_z1_long_press": {
+            "type": "string",
+            "value": "volume_slider"
+        },
+        "gesture_right_z1_pull_diagonal_down": {
+            "type": "string",
+            "value": "lock_screen"
+        },
+        "gesture_right_z1_pull_diagonal_up": {
+            "type": "string",
+            "value": "media_next"
+        },
+        "gesture_right_z1_pull_diagonal_up_and_hold": {
+            "type": "string",
+            "value": "media_controller"
+        },
+        "gesture_right_z1_swipe_up": {
+            "type": "string",
+            "value": "home"
+        },
+        "gesture_right_z1_swipe_up_and_hold": {
+            "type": "string",
+            "value": "show_touch_pad"
+        },
+        "gesture_right_z1_tap": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z1_triple_tap": {
+            "type": "string",
+            "value": "select_all_text"
+        },
+        "gesture_right_z2_custom_pull_1": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z2_custom_pull_1_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z2_custom_pull_2": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z2_custom_pull_2_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z2_custom_pull_3": {
+            "type": "string",
+            "value": "none"
+        },
+        "gesture_right_z2_custom_pull_3_and_hold": {
+            "type": "string",
+            "value": "none"
+        },
+        "global_enabled": {
+            "type": "boolean",
+            "value": true
+        },
+        "haptic_feedback": {
+            "type": "boolean",
+            "value": false
+        },
+        "hold_actions_on_release": {
+            "type": "boolean",
+            "value": false
+        },
+        "light_mode_enabled": {
+            "type": "boolean",
+            "value": false
+        },
+        "macros_v2_json": {
+            "type": "string",
+            "value": "[]"
+        },
+        "overlay_color_bottom_rgb": {
+            "type": "int",
+            "value": 4078567
+        },
+        "overlay_color_left_rgb": {
+            "type": "int",
+            "value": 2351804
+        },
+        "overlay_color_right_rgb": {
+            "type": "int",
+            "value": 4491240
+        },
+        "overlay_opacity": {
+            "type": "int",
+            "value": 45
+        },
+        "pull_animation_arrow_color_rgb": {
+            "type": "int",
+            "value": 7546920
+        },
+        "pull_animation_bubble_color_rgb": {
+            "type": "int",
+            "value": 1579032
+        },
+        "pull_animation_enabled": {
+            "type": "boolean",
+            "value": true
+        },
+        "pull_animation_opacity": {
+            "type": "int",
+            "value": 100
+        },
+        "pull_animation_sync_arrow_with_accent": {
+            "type": "boolean",
+            "value": true
+        },
+        "pull_animation_wave_color_rgb": {
+            "type": "int",
+            "value": 1579032
+        },
+        "quick_access_arc_degrees": {
+            "type": "int",
+            "value": 60
+        },
+        "quick_access_items": {
+            "type": "string",
+            "value": "[{\"type\":\"action\",\"id\":\"action:flashlight\",\"label\":\"Toggle Flashlight\",\"actionId\":\"flashlight\"}]"
+        },
+        "quick_access_radius_dp": {
+            "type": "int",
+            "value": 151
+        },
+        "quick_access_show_icon_background": {
+            "type": "boolean",
+            "value": false
+        },
+        "show_indicators": {
+            "type": "boolean",
+            "value": false
+        },
+        "split_zones_enabled": {
+            "type": "boolean",
+            "value": false
+        },
+        "touch_pad_cursor_color_rgb": {
+            "type": "int",
+            "value": 16777215
+        },
+        "touch_pad_opacity": {
+            "type": "int",
+            "value": 38
+        },
+        "touch_priority_enabled": {
+            "type": "boolean",
+            "value": true
+        },
+        "ui_accent_dark_rgb": {
+            "type": "int",
+            "value": 12101375
+        },
+        "ui_accent_light_rgb": {
+            "type": "int",
+            "value": 5078271
+        },
+        "ui_theme_mode": {
+            "type": "string",
+            "value": "dark"
+        }
+    }
+}

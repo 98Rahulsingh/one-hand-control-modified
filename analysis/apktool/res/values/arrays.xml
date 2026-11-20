@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="whats_new_more_items">
+        <item>Volume Slider: New Follow active audio option for call and ringtone volume.</item>
+        <item>Action Picker: Collapse sections, and your choice is remembered.</item>
+        <item>Redesigned the settings page for some actions for a better experience.</item>
+        <item>Bug fixes.</item>
+    </string-array>
+</resources>

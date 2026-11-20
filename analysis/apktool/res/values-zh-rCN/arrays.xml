@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="whats_new_more_items">
+        <item>音量滑块: 新增“跟随当前音频”选项，可调节通话和铃声音量。</item>
+        <item>操作选择器: 可折叠分区,并记住你的选择。</item>
+        <item>重新设计了部分操作的设置页面，带来更好的体验。</item>
+        <item>问题修复。</item>
+    </string-array>
+</resources>
