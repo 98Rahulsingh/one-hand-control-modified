@@ -6,7 +6,7 @@ on:
       apk_path:
         description: "Repository path to the original APK"
         required: true
-        default: "input/One Hand Control.apk"
+        default: "One Hand Control .apk"
 
 permissions:
   contents: read
